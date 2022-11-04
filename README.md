@@ -1,13 +1,13 @@
-----Setup Project----
+## Setup Project
 
-*git clone https://github.com/Virajana/todo-laravel.git
-*run command composer install
-*Rename env.example file into env
-*Create database
-*Run migrations --> php artisan migrate
-*Generate app key -->  php artisan key:generate
-*Install npm packges and run --> npm install and npm run dev
-*Run app --> php artisan serve
+- git clone https://github.com/Virajana/todo-laravel.git
+- run command composer install
+- Rename env.example file into env
+- Create database
+- Run migrations --> php artisan migrate
+- Generate app key -->  php artisan key:generate
+- Install npm packges and run --> npm install and npm run dev
+- Run app --> php artisan serve
 
 
 
