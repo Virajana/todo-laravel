@@ -23,7 +23,7 @@ Route::get('/', function () {
 Auth::routes();
 
 //Home
-Route::get('/', [HomeController::class, "index"])->name('home');
+Route::get('/home', [HomeController::class, "index"])->middleware("auth")->name('home');
 
 //Todo
 Route::prefix('/todo')->group(function () {
@@ -33,6 +33,3 @@ Route::prefix('/todo')->group(function () {
     Route::get('/{task_id}/done', [TodoController::class, "done"])->name('todo.done');
 });
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
